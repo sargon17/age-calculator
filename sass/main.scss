@@ -1,13 +1,15 @@
-@mixin text-bod {
+@mixin text-bold {
     font-family: Roboto;
     font-weight: 700;
-    font-size: 2.441em;   
+    font-size: 2.441em;
+    color: #575757;   
 }
 
 @mixin text-regular {
     font-family: Roboto;
     font-weight: 400;
     font-size: 12px;
+    color: #575757;
 }
 
 
@@ -25,23 +27,107 @@ $night-bg: #1E3448;
 
 
 // ! White theme standard
-$day-bg: #ffffff;    
+$day-bg: #ffffff;
+$day-bg-hover: #efefef;
+$grey-color: #575757;
+$grey-color-hover: #474747;
 $day-gradient: linear-gradient(67.32deg, #B5C6E0 0%, #EBF4F5 100%);;
 $day-shadow: 0px 19px 31px rgba(80, 114, 151, 0.29);;
 
+
+.tile{
+    background: $day-bg;
+    box-shadow: $day-shadow;
+    height: 164px;
+    max-height: 20vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px
+
+}
+
+
 body{
-    height: 100vh;
+    @include text-regular();
     background: $day-gradient;
-    @include text-regular()
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.main-wrapper{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-wrapper{
+    margin: auto;
+}
+
+.input-form{
+    width: 33vw;
+    max-width: 562px;
+}
+.input-form>div{
+    width: 85%;
+}
+
+.input-block{
+    font-size: 0;
+    display: flex;
+    margin: 10px 0;
+    width: 100%;
+}
+input{
+    border: 1px solid $grey-color;
+    height: 41px;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    width: 380px;
+    padding: 0 10px;
+}
+input:hover{
+    background: $day-bg-hover;
 }
 
 
 
-.input-form{
-    background: $day-bg;
-    width: 33vw;
-    max-width: 562px;
-    height: 10vh;
-    border-radius: 10px;
-    box-shadow: $day-shadow;
+button{
+    background: $grey-color;
+    color: $day-bg;
+    height: 41px;
+    border-radius: 0 5px 5px 0;
+}
+button:hover{
+    background: $grey-color-hover;
+}
+
+
+.output-wrapper{
+    margin: 10vh 0;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.output-tile{
+    width: 271px;
+}
+
+.output-tile h2{
+    @include text-bold();
+    display: inline-block;
+    margin-left: 10px;
+}
+.output-tile p{
+    @include text-regular();
+    display: inline-block;
+    margin-left: 5px;
+    text-transform: capitalize;
 }
