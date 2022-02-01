@@ -1,0 +1,47 @@
+@mixin text-bod {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 2.441em;   
+}
+
+@mixin text-regular {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+
+
+$night-bg: #1E3448;
+
+
+
+
+*{
+    @include text-regular()
+}
+
+
+
+// ! White theme standard
+$day-bg: #ffffff;    
+$day-gradient: linear-gradient(67.32deg, #B5C6E0 0%, #EBF4F5 100%);;
+$day-shadow: 0px 19px 31px rgba(80, 114, 151, 0.29);;
+
+body{
+    height: 100vh;
+    background: $day-gradient;
+    @include text-regular()
+}
+
+
+
+.input-form{
+    background: $day-bg;
+    width: 33vw;
+    max-width: 562px;
+    height: 10vh;
+    border-radius: 10px;
+    box-shadow: $day-shadow;
+}

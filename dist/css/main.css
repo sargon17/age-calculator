@@ -1,0 +1,24 @@
+* {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(67.32deg, #B5C6E0 0%, #EBF4F5 100%);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.input-form {
+  background: #ffffff;
+  width: 33vw;
+  max-width: 562px;
+  height: 10vh;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 19px 31px rgba(80, 114, 151, 0.29);
+          box-shadow: 0px 19px 31px rgba(80, 114, 151, 0.29);
+}
+/*# sourceMappingURL=main.css.map */
