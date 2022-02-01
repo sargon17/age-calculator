@@ -97,6 +97,7 @@ button {
   color: #ffffff;
   height: 41px;
   border-radius: 0 5px 5px 0;
+  cursor: pointer;
 }
 
 button:hover {
@@ -193,7 +194,6 @@ button:hover {
   border-radius: 50%;
   margin: 0 10px;
   border: 1px solid #575757;
-  cursor: pointer;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
@@ -211,9 +211,5 @@ button:hover {
 
 #switcher-night {
   background: linear-gradient(45deg, rgba(16, 55, 131, 0.52) 0%, #9BAFD9 100%);
-}
-
-.selected {
-  border: 3px solid #575757;
 }
 /*# sourceMappingURL=main.css.map */

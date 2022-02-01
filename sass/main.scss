@@ -107,6 +107,8 @@ button{
     color: $day-bg;
     height: 41px;
     border-radius: 0 5px 5px 0;
+    cursor: pointer;
+
 }
 button:hover{
     background: $grey-color-hover;
@@ -163,7 +165,6 @@ button:hover{
     border-radius: 50%;
     margin: 0 10px;
     border: 1px solid $grey-color;
-    cursor: pointer;
     transition: .2s ease-in-out;
 }
 .switch-btn:hover{
@@ -176,7 +177,4 @@ button:hover{
 }
 #switcher-night{
     background: $night-gradient ;
-}
-.selected{
-    border: 3px solid $grey-color;
 }
