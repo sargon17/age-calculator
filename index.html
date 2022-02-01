@@ -1,51 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/cleaner.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="dist/css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/cleaner.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="dist/css/main.css" />
     <script src="script/script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
-    <title>Document</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Age Calculator</title>
+  </head>
+  <body>
     <div class="main-wrapper">
-        <div class="input-wrapper">
-            <div class="input-form tile">
-                <div>
-                    <h1>When is your Birthday?</h1>
-                    <div class="input-block">
-                        <input type="date" name="" id="">
-                        <button>Calculate</button>
-                    </div>
-                </div>
+      <div class="input-wrapper">
+        <div class="input-form tile">
+          <div>
+            <h1>When is your Birthday?</h1>
+            <div class="input-block">
+              <input type="date" name="" id="" />
+              <button>Calculate</button>
             </div>
+          </div>
         </div>
-        <div class="output-wrapper">
-            <div class="tile output-tile">
-                <div>
-                    <h2>76</h2>
-                    <p>years</p>
-                </div>
-            </div>
-            <div class="tile output-tile">
-                <div>
-                    <h2>7</h2>
-                    <p>month</p>
-                </div>
-            </div>
-            <div class="tile output-tile">
-                <div>
-                    <h2>12</h2>
-                    <p>days</p>
-                </div>
-            </div>
+      </div>
+      <div class="output-wrapper">
+        <div class="tile output-tile">
+          <div>
+            <h2>76</h2>
+            <p>years</p>
+          </div>
         </div>
+        <div class="tile output-tile">
+          <div>
+            <h2>7</h2>
+            <p>month</p>
+          </div>
+        </div>
+        <div class="tile output-tile">
+          <div>
+            <h2>12</h2>
+            <p>days</p>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <div class="mode-section">
+      <div class="tile mode-tile">
+        <div class="mode-switcher-title">
+          <h3>Switch Day/Night Mode</h3>
+        </div>
+        <div class="mode-switcher-buttons">
+            <button id="switcher-day" class="switch-btn"></button>
+            <button id="switcher-night" class="switch-btn"></button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
