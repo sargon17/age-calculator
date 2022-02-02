@@ -1,17 +1,23 @@
 let input = document.querySelector("#date");
 let calcBtn = document.querySelector(".calc-btn");
+let yearsOutput = document.querySelector("#years");
+let monthsOutput = document.querySelector("#months");
+let daysOutput = document.querySelector("#days");
 
 let data;
-// let now;
 
 function dateDifference(data) {
-  let now = new Date.now();
+  let now = new Date();
   let difference = now.getTime() - data.getTime();
-  console.log(difference);
+  let years = Math.floor(difference / 31557600000);
+  let months = Math.floor((difference - years * 31557600000) / 2629800000);
+  let days = Math.floor(
+    (difference - years * 31557600000 - months * 2629800000) / 86400000
+  );
+  yearsOutput.innerHTML = years;
+  monthsOutput.innerHTML = months;
+  daysOutput.innerHTML = days;
 }
-
-// console.log(d);
-// console.log(y);
 
 calcBtn.addEventListener("click", () => {
   data = new Date(input.value);

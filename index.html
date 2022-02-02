@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +23,7 @@
           <div>
             <h1>When is your Birthday?</h1>
             <div class="input-block">
-              <input type="date" name="" id="date" />
+              <input type="date" name="" id="date"  min="01-01-1900" max="31-12-2030"/>
               <button class="calc-btn">Calculate</button>
             </div>
           </div>
@@ -32,19 +32,19 @@
       <div class="output-wrapper">
         <div class="tile output-tile">
           <div>
-            <h2>76</h2>
+            <h2 id="years">--</h2>
             <p>years</p>
           </div>
         </div>
         <div class="tile output-tile">
           <div>
-            <h2>7</h2>
+            <h2 id="months">--</h2>
             <p>month</p>
           </div>
         </div>
         <div class="tile output-tile">
           <div>
-            <h2>12</h2>
+            <h2 id="days">--</h2>
             <p>days</p>
           </div>
         </div>
