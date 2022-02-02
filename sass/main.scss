@@ -99,6 +99,9 @@ input{
 input:hover{
     background: $day-bg-hover;
 }
+input:focus{
+    border: none;
+}
 
 
 

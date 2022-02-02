@@ -92,6 +92,10 @@ input:hover {
   background: #efefef;
 }
 
+input:focus {
+  border: none;
+}
+
 button {
   background: #575757;
   color: #ffffff;
