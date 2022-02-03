@@ -66,6 +66,12 @@ body {
   max-width: 562px;
 }
 
+@media (max-width: 799px) {
+  .input-form {
+    width: 60vw;
+  }
+}
+
 .input-form > div {
   width: 85%;
 }
@@ -120,6 +126,16 @@ button:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media (max-width: 799px) {
+  .output-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 50vh;
+  }
 }
 
 .output-tile {

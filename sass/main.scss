@@ -15,6 +15,32 @@
 
 
 
+// 320px, 576px, 768px, 992px, 1200px, 1440px
+
+// For Mobile-First Design
+// @mixin screen-min($min) { 
+//     @media (min-width: $min) { 
+//       @content 
+//     } 
+//   };
+  
+  // For Desktop-First Design
+  @mixin screen-max($max) { 
+    @media (max-width: $max) { 
+      @content 
+    } 
+  };
+  
+  // For Hybrid Design
+//   @mixin screen-minmax($min, $max){ 
+//     @media (min-width: $min) and (max-width: $max - 1){ 
+//       @content 
+//     }
+//   };
+
+
+
+
 $night-bg: #1E3448;
 $night-gradient: linear-gradient(45deg, rgba(16, 55, 131, 0.52) 0%, #9BAFD9 100%);
 
@@ -60,7 +86,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
 }
 
 .main-wrapper{
@@ -77,6 +102,9 @@ body{
     @include align-center();
     width: 33vw;
     max-width: 562px;
+    @include screen-max(799px){
+        width: 60vw;
+    }
 }
 .input-form>div{
     width: 85%;
@@ -103,8 +131,6 @@ input:focus{
     border: none;
 }
 
-
-
 button{
     background: $grey-color;
     color: $day-bg;
@@ -124,6 +150,10 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    @include screen-max(799px){
+        flex-direction: column;
+        height: 50vh;
+    }
 }
 .output-tile{
     @include align-center();
