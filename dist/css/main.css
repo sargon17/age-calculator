@@ -178,6 +178,7 @@ button:hover {
 @media (max-width: 499px) {
   .output-tile {
     width: 100%;
+    height: 25%;
   }
 }
 
